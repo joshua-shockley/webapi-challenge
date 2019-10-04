@@ -12,3 +12,17 @@ I need this code, just don't know where, perhaps should make some middleware, do
 
 Go code!
 */
+require('dotenv').config;
+
+const express = require('express');
+
+const server = require('./server.js');
+
+
+
+port = process.env.PORT || 6000;
+
+
+server.listen(port, () => {
+    console.log(`\n   api running on http://localhost:${port}  \n`);
+});

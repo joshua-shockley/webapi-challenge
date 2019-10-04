@@ -26,13 +26,27 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+Express is a way to interact with the browser by putting js in a place other than the browser console.. It uses v8 to process data or a “api server” with which to interact with the browser and data to use js
+
 - [ ] Describe Middleware?
+
+Middleware is really just a normal js function that is used to filter or give specific errors. Or log what's happening on the server.  Middleware is really a way to adapt how the server works and adds additional functionality. 
 
 - [ ] Describe a Resource?
 
+From what I gather a resource is the data from a database or dummy data array/object that we utilize to make the crud operation functions/endpoints
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+We can return a code number and even if that means that its a 404 for info not found
+ 
+
 - [ ] How can we partition our application into sub-applications?
+
+Well we can split the functionality out into different files to make it easier to read and keep those files smaller and more accessible to find errors or make changes.
+In the instance for node.js we can use .env and split the main part of the  server/ router into different files that work with specific resources.
+
+
 
 ## Project Setup
 
