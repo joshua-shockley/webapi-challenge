@@ -163,7 +163,7 @@ function validPojectId(req, res, next) {
     const id = req.params.id;
     Projects.get(id)
         .then(thing => {
-            if (thing.projectId !== thing.id) {
+            if (projectId !== thing.id) {
                 res.status(404).json({ Message: 'not using proper id number' });
             } else {
                 console.log(projectId);
